@@ -20,4 +20,3 @@ import Home from './views/Home.vue';
 
 
 createApp(App).mount('#app')
-createApp(Home).mount('#home')
