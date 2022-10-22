@@ -1,13 +1,13 @@
 import axios from 'axios'
 
-const axiosInstance = axios.create({
-    baseURL: "http://localhost:3000"
+const api = axios.create({
+    baseURL: "https://pokeapi.co/api/v2",
+    timeout: 1000,
 });
 
-axiosInstance.get("")
 
-export const api = {
+export const apiAxios = {
     get(endpoint) {
-        return axiosInstance.get(endpoint);
+        return api.get(endpoint);
     }
 }
